@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.mb-5 {
+    margin-bottom: 0.5em;
+}
+.mb-20 {
+    margin-bottom: 2em;
+}
+
+.ml-10 {
+    margin-left: 1em;
+}
+
+
+
+/* Header */
+header {
+    background-color: black;
+    color: #fff;
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+header img {
+    width: 15px;
+    margin: 0 10px;
+}
+
+.grey {
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    height: 78vh;
+}
+
+
+
+/* Navbar */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 16vh;
+}
+
+nav h2 {
+    font-size: 1.1rem;
+}
+
+nav h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.navl ul,
+.navr {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    font-size: 0.9rem;
+    color: black;
+    font-weight: bold;
+}
+
+.navl ul li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.navl ul li a:hover,
+.navr a:hover {
+    color: grey;
+    transition: 0.2s;
+}
+
+.navr a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    padding: 15px 18px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+
+/* Main Section */
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.txthero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.txthero h1 {
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    color: rgb(26, 26, 26);
+}
+
+.mail {
+    margin-right: 10px;
+}
+
+.mail h5 {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    padding: 18px 30px;
+    border-radius: 4px;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.txt1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+
+}
+
+.txt1 i {
+    font-size: 1.2rem;
+    margin-right: 0.7em;
+}
+
+.txt1 h5 {
+    font-size: 0.9rem;
+    color: grey;
+    font-weight: 800;
+}
+
+.mailcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.imghero img {
+    width: 310px;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+
+
+/* Logos Section */
+.logos {
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos img {
+    width: 110px;
+
+}
+
+
+/* Phone Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 3em;
+    border-radius: 8px;
+    position: relative;
+}
+
+.content .txt {
+    padding-left: 80px;
+    max-width: 50%;
+}
+
+.content .txt h2,
+.imgedit .txt h2 {
+    margin-bottom: 0.8rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    color: rgb(26, 26, 26);
+}
+
+.content .txt p,
+.txthero p,
+.imgedit .txt p {
+    margin-bottom: 0.8rem;
+    line-height: 1.5rem;
+    color: grey;
+}
+
+.content .txt a,
+.imgedit .txt a {
+    margin-bottom: 0.8rem;
+    line-height: 1.5rem;
+    color: grey;
+    font-weight: bold;
+}
+
+.container .phone img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1000px;
+}
+
+
+
+/* Editor section */
+.imgedit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgeditor img {
+    width: 550px;
+}
+
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    color: white;  
+}
+
+.footercont {
+    margin-right: 30px;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 40px;
+    
+}
+
+.sitemap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+.sitemap a {
+    text-decoration: none;
+    color: grey;
+}
+.sitemap a:hover {
+    color:white;
+    transition: 0.2s;
+}
+
+.footercont {
+    line-height: 1.5rem;
+}
+
+.footercont h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.footercont h2 {
+    margin-bottom: 15px;
+}
+
+.footercont p {
+    color: grey;
+} 
