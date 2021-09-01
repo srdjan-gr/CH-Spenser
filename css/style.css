@@ -305,8 +305,6 @@ nav h2 a {
 }
 
 
-
-
 /* Footer */
 footer {
     width: 100%;
@@ -319,7 +317,6 @@ footer {
 .footer {
     display: flex;
     justify-content: space-between;
-
 }
 
 .sitemap {
@@ -341,6 +338,7 @@ footer {
 
 .footercont {
     line-height: 1.5rem;
+    max-width: 40%;
 }
 
 .footercont h2 a {
@@ -483,6 +481,7 @@ footer {
         display: grid;
         grid-column: 1/3;
         padding-right: 1em;
+        max-width: 100%;
     }
 
 }
@@ -609,7 +608,7 @@ footer {
     }
 
     .imgeditor img {
-        width: 360px;
+        width: 350px;
     }
     
     .imgedit {
@@ -625,5 +624,28 @@ footer {
 
 
     /* Footer MOB*/
+    footer {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       grid-gap: 1em;
+        margin-top: 0em;
+        padding: 0.7em;
+    }
+
+    .footercont {
+        display: grid;
+        grid-column: 1/3;
+        padding: 0;
+        margin-bottom: 1em;
+    }
+
+    .sitemap {
+        line-height: 1.6rem;
+    }
 
 }
