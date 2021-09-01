@@ -52,13 +52,13 @@ header {
 header img {
     width: 1em;
     height: 1em;
-    margin: 0 5px;
+    margin: 0 0.6em;
 }
 
 .grey {
     background-color: rgb(230, 230, 230);
     width: 100%;
-    height: 78vh;
+    height: 74vh;
 }
 
 
@@ -94,8 +94,18 @@ nav h2 a {
     font-weight: bold;
 }
 
+.navtab {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.navtab .navl {
+    margin-right: 10em;
+}
+
 .navtab a {
-    margin-left: 30px;
+    margin-left: 1.5em;
     text-decoration: none;
     color: black;
 }
@@ -105,14 +115,12 @@ nav h2 a {
     transition: 0.2s;
 }
 
-
 .btn a {
     color: #fff;
     text-decoration: none;
     background-color: black;
-    padding: 15px 18px;
-    border-radius: 4px;
-    border: 1px solid black;
+    padding: 0.8em 1em;
+    border-radius: 0.3em;
 }
 
 
@@ -136,25 +144,13 @@ nav h2 a {
 }
 
 .txthero h1 {
-    margin-bottom: 0.8rem;
-    margin-top: 0.8rem;
+    margin: 0.4em 0;
     line-height: 3rem;
     font-size: 2.5rem;
     color: rgb(26, 26, 26);
 }
 
-.mail {
-    margin-right: 10px;
-}
 
-.mail h5 {
-    color: rgb(189, 189, 189);
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    padding: 18px 30px;
-    border-radius: 4px;
-    border: 1px solid rgb(189, 189, 189);
-}
 
 .txt1 {
     display: flex;
@@ -179,7 +175,21 @@ nav h2 a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 1.2em;
+}
+
+.mail {
+    margin-right: 1em;
+}
+
+.mail h5 {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    padding: 0.9em 2em;
+    border-radius: 0.3em;
+    border: 1px solid rgb(189, 189, 189);
+    font-size: 0.9rem;
 }
 
 .imghero img {
@@ -200,14 +210,14 @@ nav h2 a {
 /* Logos Section */
 .logos {
     width: 100%;
-    height: 17vh;
+    height: 14vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logos img {
-    width: 110px;
+    width: 6.5em;
 }
 
 
@@ -216,7 +226,7 @@ nav h2 a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  justify-content: center;
+    justify-content: center;
     align-items: flex-end;
     width: 100%;
     height: 400px;
@@ -225,12 +235,12 @@ nav h2 a {
 }
 
 .content2 .txt {
-    padding-left: 80px;
+    padding-left: 6em;
 }
 
 .content2 .txt h2,
 .imgedit .txt h2 {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4em;
     line-height: 2.5rem;
     font-size: 2rem;
     color: rgb(26, 26, 26);
@@ -254,7 +264,7 @@ nav h2 a {
 
 .container .phone img {
     width: 500px;
-    padding-top: 54px;
+    padding-top: 3.3em;
 }
 
 .container .phonetab img {
@@ -291,11 +301,21 @@ footer {
     padding-top: 2em;
 }
 
-.footer {
+/* .footer {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    
-}
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+} */
+
+/* .footercont {
+    grid-column: 1/2;
+} */
+
+/* .sitediv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3em;
+} */
 
 .sitemap {
     display: flex;
@@ -338,10 +358,6 @@ footer {
 
 @media only screen and (max-width:768px) {
 
-    .navtab {
-        display: flex;
-        margin: 0;
-    }
 
     .container {
         width: 90%;
@@ -364,6 +380,10 @@ footer {
 
     nav {
         height: 11vh;
+    }
+
+    .navtab .navl {
+        margin-right: 0;
     }
 
     .content {
@@ -399,9 +419,9 @@ footer {
     }
 
     .container .phone img {
-      display: none;
+        display: none;
     }
-    
+
     .container .phonetab img {
         display: block;
         width: 400px;
@@ -416,11 +436,11 @@ footer {
     .content2 .txt {
         padding: 0 3em 0 0;
     }
-    
+
     .imgedit {
         display: flex;
         flex-direction: column-reverse;
-        align-items:flex-start;
+        align-items: flex-start;
         margin-top: 3em;
     }
 
@@ -430,18 +450,21 @@ footer {
 
     footer {
         width: 100%;
-        height: 50vh;
+        height: 40vh;
     }
 
     .footer {
-       grid-template-columns:  repeat(4, 1fr);
-       grid-gap: 2em;
-       padding-top: 2em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 2em;
+        grid-row-gap: 2em;
+        margin-top: 2em;
     }
-
+   
     .footercont {
         display: grid;
         grid-column: 1/3;
+        padding-right: 1em;
     }
 
 }
