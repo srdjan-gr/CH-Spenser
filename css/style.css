@@ -295,27 +295,17 @@ nav h2 a {
 /* Footer */
 footer {
     width: 100%;
-    height: 30vh;
+    height: 28vh;
     background-color: black;
     color: white;
     padding-top: 2em;
 }
 
-/* .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.footer {
+    display: flex;
+    justify-content: space-between;
 
-} */
-
-/* .footercont {
-    grid-column: 1/2;
-} */
-
-/* .sitediv {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 3em;
-} */
+}
 
 .sitemap {
     display: flex;
