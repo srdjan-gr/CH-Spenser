@@ -81,6 +81,9 @@ nav .hamb {
     display: none;
 }
 
+nav .close {
+    display: none;
+}
 
 
 nav h2 {
@@ -495,9 +498,7 @@ footer {
         height: 830px;
     }
 
-    nav .hamb {
-        display: flex;
-    }
+  
 
     /* Header MOB*/
     header {
@@ -505,13 +506,71 @@ footer {
     }
 
     /* Navbar MOB*/
-    nav .navtab {
-        display: grid;
-        height: 30vh;
-        background-color: rgba(0, 0, 0, 0.9);
+    .navtab {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 53vh;
+        background-color: rgba(0, 0, 0, 0.95);
         width: 100%;
         z-index: 1000;
+        top: 8em;
+        left:0;
         display: none;
+        animation: navmobanim 0.8s ease-out forwards;
+        border-radius: 0.2em;
+    }
+
+    @keyframes navmobanim {
+        0% {left: -100%;}
+        100% {left: 0%;}
+    }
+
+    .navtab.show {
+        display: flex;
+    }
+
+    nav .hamb {
+        display: flex;
+    }
+
+    nav .hamb.close {
+        display: none;
+    }
+
+    nav .hamb:hover {
+        cursor: pointer;
+        transition: 0.1s ease-in;
+    }
+
+    nav .close {
+        display: flex;
+        height: 20px;
+        display: none;
+    }
+
+    nav .close.show {
+        display: flex;
+    }
+
+    nav .close {
+        cursor: pointer;
+        transition: 0.1s ease-in;
+    }
+
+    nav .navtab a {
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .navl ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
     }
 
     nav .navtab li {
@@ -519,23 +578,9 @@ footer {
         grid-template-rows: repeat(3, 1fr);
     }
 
-    .navtab a {
-        color: white;
-    }
-
     .navtab .btn a {
         display: none;
     }
-
-
-    /* .navl ul,
-    .navr {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-    } */
 
 
     /* Main SectionMOB */
